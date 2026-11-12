@@ -1,0 +1,53 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# PyInstaller / Binaries / Large archives
+*.manifest
+*.spec
+*.exe
+*.zip
+*.7z
+*.tar.gz
+
+# Local test outputs and logs
+*.log
+test_*.pdf
+test_*.png
+test_*.dxf
+thread_test.pdf
+EXPORTADOS/
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+
+# Editor configs
+.vscode/
+.idea/
+*.swp

@@ -1,0 +1,52 @@
+================================================================================
+   TIJERALCAD PRO - SOFTWARE DE DISEÑO Y CÁLCULO ESTRUCTURAL
+   TIJERAL A DOS AGUAS EN V INVERTIDA (GABLE FRAME)
+   Normativa: AISC 360-16 LRFD | NTE E.020 | NTE E.090 | AISI S100
+================================================================================
+
+1. ¿CÓMO EJECUTAR EL PROGRAMA?
+--------------------------------------------------------------------------------
+   • MODO 1 (RECOMENDADO PARA CUALQUIER USUARIO - SIN PYTHON):
+     Haga doble clic directamente sobre el archivo ejecutable:
+     👉 TijeralCAD_Pro.exe
+     
+     No requiere instalar Python, ni librerías, ni ningún otro programa.
+     Funciona en Windows 10 y Windows 11 de forma totalmente independiente.
+
+   • MODO 2 (PARA DESARROLLADORES O CON ENTORNO PYTHON):
+     Si prefiere ejecutar el código fuente o modificarlo:
+     1) Instale dependencias: pip install -r requirements.txt
+     2) Ejecute: ejecutar_app.bat  (o bien: py app_tijeral.py)
+
+2. CONTENIDO DEL PAQUETE
+--------------------------------------------------------------------------------
+   • TijeralCAD_Pro.exe               : Ejecutable standalone listo para usar.
+   • Memoria_Tecnica_Tijeral_V_Invertida.pdf : Memoria formal de cálculo de ejemplo (6 páginas).
+   • app_tijeral.py                   : Código fuente de la interfaz gráfica moderna (PySide6).
+   • solver_v_invertida.py            : Motor analítico matricial FEA y verificaciones LRFD.
+   • generar_pdf_tijeral.py           : Generador de memoria de cálculo profesional en PDF.
+   • perfiles_peru.py                 : Catálogo de perfiles peruanos (TR A500, Correas C/U, Tensores A36).
+   • dxf_exporter.py                  : Exportador de geometría estructural a AutoCAD (DXF).
+   • exportar_todo.py                 : Script rápido para generación directa de la memoria PDF.
+   • requirements.txt                 : Lista de librerías para ejecución en modo Python.
+   • compilar_exe.bat                 : Script por lotes para recompilar el ejecutable si se modifica el código.
+
+3. CARACTERÍSTICAS TÉCNICAS Y FUNCIONALIDADES
+--------------------------------------------------------------------------------
+   ✓ Geometría paramétrica en V invertida (Luz, Flecha, Altura de columnas).
+   ✓ Análisis de viento según NTE E.020 para dos condiciones:
+       - Espacio Abierto (Tinglados / Cobertizos con barlovento a presión y succión).
+       - Espacio Cerrado (Edificaciones con muros perimetrales).
+   ✓ Envolvente de todas las combinaciones LRFD (1.4D, 1.2D+1.6Lr, 1.2D+1.0W+0.5Lr, 0.9D-1.0W).
+   ✓ Verificación de viga TR por interacción flexocompresión biaxial/uniaxial (AISC Eq. H1-1a/b).
+   ✓ Verificación de correas de techo por flexión (AISI S100) y flecha elástica (L/200 según NTE E.020).
+   ✓ Verificación de tensor horizontal por fluencia en área total y rotura en nudos roscados (AISC D2).
+   ✓ Dimensionamiento de apoyo móvil ranurado con carrera térmica y elástica.
+   ✓ Cálculo de longitud requerida de cordón de soldadura de cartela a viga TR.
+   ✓ Exportación de Memoria de Cálculo formal en PDF con encabezado "LDC-Peru - Estructuras",
+     fórmulas en formato LaTeX nítidas y diagramas continuos de momentos flectores.
+   ✓ Exportación a plano CAD (DXF) con capas separadas y cotas.
+
+================================================================================
+Desarrollado para LDC-Perú Estructuras | Noviembre 2026
+================================================================================
