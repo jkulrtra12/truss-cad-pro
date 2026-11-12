@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "termo-auditorio: Interactive 2D/3D CFD tool for thermal comfort and HVAC analysis in auditoriums"
+authors:
+  - family-names: "Benites"
+    given-names: "Ulises"
+    orcid: "0000-0000-0000-0000"   # ← reemplaza con tu ORCID real
+date-released: 2026-11-13
+repository-code: "https://github.com/jkulrtra12/truss-cad-pro"
+license: MIT
